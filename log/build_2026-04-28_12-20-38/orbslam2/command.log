@@ -1,0 +1,6 @@
+Invoking command in '/home/roey/tello-ros2/build/orbslam2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/slam/src/orbslam2 -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/orbslam2
+Invoked command in '/home/roey/tello-ros2/build/orbslam2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/slam/src/orbslam2 -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/orbslam2
+Invoking command in '/home/roey/tello-ros2/build/orbslam2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roey/tello-ros2/build/orbslam2 -- -j8 -l8
+Invoked command in '/home/roey/tello-ros2/build/orbslam2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roey/tello-ros2/build/orbslam2 -- -j8 -l8
+Invoking command in '/home/roey/tello-ros2/build/orbslam2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roey/tello-ros2/build/orbslam2
+Invoked command in '/home/roey/tello-ros2/build/orbslam2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roey/tello-ros2/build/orbslam2

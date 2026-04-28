@@ -1,0 +1,20 @@
+Consolidate compiler generated dependencies of target tello_control
+[100%] Built target tello_control
+-- Install configuration: ""
+-- Installing: /home/roey/tello-ros2/install/tello_control/lib/tello_control/tello_control
+-- Set runtime path of "/home/roey/tello-ros2/install/tello_control/lib/tello_control/tello_control" to ""
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/package_run_dependencies/tello_control
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/parent_prefix_path/tello_control
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/ament_prefix_path.sh
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/ament_prefix_path.dsv
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/path.sh
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/path.dsv
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.bash
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.sh
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.zsh
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.dsv
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/package.dsv
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/packages/tello_control
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/cmake/tello_controlConfig.cmake
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/cmake/tello_controlConfig-version.cmake
+-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/package.xml

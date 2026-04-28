@@ -1,0 +1,2 @@
+Invoking command in '/home/roey/tello-ros2/build/tello_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/workspace/src/tello_msg -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/tello_msg
+Invoked command in '/home/roey/tello-ros2/build/tello_msg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/workspace/src/tello_msg -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/tello_msg

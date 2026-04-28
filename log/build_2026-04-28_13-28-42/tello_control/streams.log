@@ -1,0 +1,66 @@
+[0.013s] Invoking command in '/home/roey/tello-ros2/build/tello_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/workspace/src/tello_control -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/tello_control
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.153s] -- The CXX compiler identification is GNU 11.4.0
+[0.162s] -- Detecting C compiler ABI info
+[0.248s] -- Detecting C compiler ABI info - done
+[0.260s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.260s] -- Detecting C compile features
+[0.260s] -- Detecting C compile features - done
+[0.265s] -- Detecting CXX compiler ABI info
+[0.380s] -- Detecting CXX compiler ABI info - done
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.395s] -- Detecting CXX compile features
+[0.396s] -- Detecting CXX compile features - done
+[0.411s] -- Found OpenCV version 4.5.4
+[0.414s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.695s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.828s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.891s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.899s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.911s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.929s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.953s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.018s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.021s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.131s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.171s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.228s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.241s] -- Looking for pthread.h
+[1.331s] -- Looking for pthread.h - found
+[1.331s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.422s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.423s] -- Found Threads: TRUE  
+[1.502s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.523s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.549s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.683s] -- Configuring done
+[1.699s] -- Generating done
+[1.701s] -- Build files have been written to: /home/roey/tello-ros2/build/tello_control
+[1.713s] Invoked command in '/home/roey/tello-ros2/build/tello_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/workspace/src/tello_control -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/tello_control
+[1.716s] Invoking command in '/home/roey/tello-ros2/build/tello_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roey/tello-ros2/build/tello_control -- -j8 -l8
+[1.774s] Consolidate compiler generated dependencies of target tello_control
+[1.792s] [ 50%] Building CXX object CMakeFiles/tello_control.dir/src/main.cpp.o
+[20.005s] [100%] Linking CXX executable tello_control
+[21.254s] [100%] Built target tello_control
+[21.267s] Invoked command in '/home/roey/tello-ros2/build/tello_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roey/tello-ros2/build/tello_control -- -j8 -l8
+[21.310s] Invoking command in '/home/roey/tello-ros2/build/tello_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roey/tello-ros2/build/tello_control
+[21.320s] -- Install configuration: ""
+[21.320s] -- Installing: /home/roey/tello-ros2/install/tello_control/lib/tello_control/tello_control
+[21.327s] -- Set runtime path of "/home/roey/tello-ros2/install/tello_control/lib/tello_control/tello_control" to ""
+[21.328s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/rviz.rviz
+[21.328s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/package_run_dependencies/tello_control
+[21.328s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/parent_prefix_path/tello_control
+[21.328s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/ament_prefix_path.sh
+[21.328s] -- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/ament_prefix_path.dsv
+[21.328s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/path.sh
+[21.328s] -- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/path.dsv
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.bash
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.sh
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.zsh
+[21.329s] -- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.dsv
+[21.329s] -- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/package.dsv
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/packages/tello_control
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/cmake/tello_controlConfig.cmake
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/cmake/tello_controlConfig-version.cmake
+[21.329s] -- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/package.xml
+[21.332s] Invoked command in '/home/roey/tello-ros2/build/tello_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roey/tello-ros2/build/tello_control

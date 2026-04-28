@@ -1,0 +1,27 @@
+[0.023s] Invoking command in '/home/roey/tello-ros2/build/orbslam2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/slam/src/orbslam2 -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/orbslam2
+[0.042s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.289s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.355s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.361s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.374s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.397s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.425s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.472s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.474s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.633s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.722s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.767s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.795s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.806s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.829s] CMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+[0.829s]   Could NOT find ORB_SLAM2 (missing: ORB_SLAM2_INCLUDE_DIRS
+[0.829s]   ORB_SLAM2_LIBRARIES)
+[0.830s] Call Stack (most recent call first):
+[0.830s]   /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)
+[0.830s]   CMakeModules/FindORB_SLAM2.cmake:43 (find_package_handle_standard_args)
+[0.830s]   CMakeLists.txt:26 (find_package)
+[0.830s] 
+[0.830s] 
+[0.830s] -- Configuring incomplete, errors occurred!
+[0.830s] See also "/home/roey/tello-ros2/build/orbslam2/CMakeFiles/CMakeOutput.log".
+[0.839s] Invoked command in '/home/roey/tello-ros2/build/orbslam2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/slam/src/orbslam2 -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/orbslam2

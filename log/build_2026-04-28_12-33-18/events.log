@@ -1,0 +1,285 @@
+[0.000000] (-) TimerEvent: {}
+[0.000306] (-) JobUnselected: {'identifier': 'orbslam2'}
+[0.000521] (-) JobUnselected: {'identifier': 'tello_msg'}
+[0.000685] (tello_control) JobQueued: {'identifier': 'tello_control', 'dependencies': OrderedDict()}
+[0.000755] (tello) JobQueued: {'identifier': 'tello', 'dependencies': OrderedDict([('tello_msg', '/home/roey/tello-ros2/install/tello_msg')])}
+[0.000916] (tello_control) JobStarted: {'identifier': 'tello_control'}
+[0.008888] (tello) JobStarted: {'identifier': 'tello'}
+[0.019380] (tello_control) JobProgress: {'identifier': 'tello_control', 'progress': 'cmake'}
+[0.019865] (tello_control) Command: {'cmd': ['/usr/bin/cmake', '/home/roey/tello-ros2/workspace/src/tello_control', '-DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/tello_control'], 'cwd': '/home/roey/tello-ros2/build/tello_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('npm_config_devdir', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/node-gyp'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/roey'), ('CURSOR_EXTENSION_HOST_ROLE', 'agent-exec'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('PUPPETEER_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/puppeteer'), ('HTTPS_PROXY', 'http://127.0.0.1:41967'), ('no_proxy', '127.0.0.1,::1,localhost'), ('LANGUAGE', 'en_IL:en'), ('USER', 'roey'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-il","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('CARGO_TARGET_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cargo-target'), ('CCACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/ccache'), ('all_proxy', 'http://127.0.0.1:41967'), ('CI', '1'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pip'), ('NUGET_PACKAGES', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nuget'), ('HOMEBREW_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/homebrew'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('SOCKS_PROXY', 'socks5://127.0.0.1:44995'), ('HOME', '/home/roey'), ('CHROME_DESKTOP', 'cursor.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', '127.0.0.1,::1,localhost'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4453e446-2.5.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1147'), ('SYSTEMD_EXEC_PID', '1658'), ('NO_COLOR', '1'), ('CONDA_PKGS_DIRS', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/conda'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6607'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COMPOSER_HOME', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/composer'), ('https_proxy', 'http://127.0.0.1:41967'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'roey'), ('FORCE_COLOR', '0'), ('ALL_PROXY', 'http://127.0.0.1:41967'), ('http_proxy', 'http://127.0.0.1:41967'), ('JOURNAL_STREAM', '8:15447'), ('BUN_INSTALL_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GOMODCACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-mod'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roey'), ('CP_HOME_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cocoapods'), ('socks_proxy', 'socks5://127.0.0.1:44995'), ('TERM', 'dumb'), ('EVERYSPHERE_RIPGREP_PATH', '/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/rg'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models::/home/roey/nakai_ws/src/my_robot_description/models/textured_box:/home/roey/nakai_ws/src/my_robot_description/models/textured_box'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SOCKS5_PROXY', 'socks5://127.0.0.1:44995'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('POETRY_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/poetry'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/roey/.local/bin:/home/roey/.local/bin:/opt/ros/humble/bin:/home/roey/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/roey-IdeaPad-Gaming-3-15IMH05:@/tmp/.ICE-unix/1635,unix/roey-IdeaPad-Gaming-3-15IMH05:/tmp/.ICE-unix/1635'), ('YARN_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/yarn'), ('INVOCATION_ID', '3f31e7185bd24af994fe4f04a91c7227'), ('UV_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/uv'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host (agent-exec) [4-18]'), ('PLAYWRIGHT_BROWSERS_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/playwright'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('BUNDLE_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bundle'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_CACHE_DIRECTORY', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nx'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CYPRESS_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cypress'), ('CURSOR_TRACE_ID', '9a5215f120fa4fd4846e417e2012c30f'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('PNPM_STORE_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pnpm-store'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('CURSOR_SANDBOX', 'native'), ('GOCACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-build'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_HTTP_PROXY', 'http://127.0.0.1:41967'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('socks5_proxy', 'socks5://127.0.0.1:44995'), ('QT_IM_MODULE', 'ibus'), ('NPM_CONFIG_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/npm'), ('PWD', '/home/roey/tello-ros2/build/tello_control'), ('GRADLE_USER_HOME', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gradle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/roey/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GIT_HTTPS_PROXY', 'http://127.0.0.1:41967'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:41967'), ('TURBO_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/turbo'), ('COLCON', '1'), ('__CURSOR_SANDBOX_ENV_RESTORE', "builtin export HTTP_PROXY='http://127.0.0.1:41967'; builtin export HTTPS_PROXY='http://127.0.0.1:41967'; builtin export http_proxy='http://127.0.0.1:41967'; builtin export https_proxy='http://127.0.0.1:41967'; builtin export GIT_HTTP_PROXY='http://127.0.0.1:41967'; builtin export GIT_HTTPS_PROXY='http://127.0.0.1:41967'; builtin export SOCKS_PROXY='socks5://127.0.0.1:44995'; builtin export SOCKS5_PROXY='socks5://127.0.0.1:44995'; builtin export socks_proxy='socks5://127.0.0.1:44995'; builtin export socks5_proxy='socks5://127.0.0.1:44995'; builtin export ALL_PROXY='http://127.0.0.1:41967'; builtin export all_proxy='http://127.0.0.1:41967'; builtin export NO_PROXY='127.0.0.1,::1,localhost'; builtin export no_proxy='127.0.0.1,::1,localhost'"), ('_ZO_DOCTOR', '0'), ('GEM_SPEC_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gem-specs'), ('CURSOR_SANDBOX_LANDLOCK_STATUS', 'fully_enforced'), ('VSCODE_PID', '6607'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099270] (-) TimerEvent: {}
+[0.199527] (-) TimerEvent: {}
+[0.299766] (-) TimerEvent: {}
+[0.399989] (-) TimerEvent: {}
+[0.489697] (tello_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.489887] (tello_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.489980] (tello_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.490060] (tello_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.490137] (tello_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.490212] (tello_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.490286] (tello_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.490358] (tello_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.490438] (tello_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.490524] (tello_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.490598] (tello_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.490671] (tello_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.490743] (tello_control) StdoutLine: {'line': b'-- Found OpenCV version 4.5.4\n'}
+[0.490816] (tello_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500103] (-) TimerEvent: {}
+[0.600287] (-) TimerEvent: {}
+[0.668960] (tello_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700417] (-) TimerEvent: {}
+[0.797417] (tello_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.800484] (-) TimerEvent: {}
+[0.859984] (tello_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.867695] (tello_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.879813] (tello_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.898155] (tello_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900597] (-) TimerEvent: {}
+[0.923569] (tello_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.992105] (tello_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.995699] (tello_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.000696] (-) TimerEvent: {}
+[1.064220] (tello) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/tello', 'build', '--build-base', '/home/roey/tello-ros2/build/tello/build', 'install', '--record', '/home/roey/tello-ros2/build/tello/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/roey/tello-ros2/workspace/src/tello', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'npm_config_devdir': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/node-gyp', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/roey', 'CURSOR_EXTENSION_HOST_ROLE': 'agent-exec', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'PUPPETEER_CACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/puppeteer', 'HTTPS_PROXY': 'http://127.0.0.1:41967', 'no_proxy': '127.0.0.1,::1,localhost', 'LANGUAGE': 'en_IL:en', 'USER': 'roey', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-gb","osLocale":"en-il","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}', 'CARGO_TARGET_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cargo-target', 'CCACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/ccache', 'all_proxy': 'http://127.0.0.1:41967', 'CI': '1', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'PIP_CACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pip', 'NUGET_PACKAGES': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nuget', 'HOMEBREW_CACHE': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/homebrew', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/roey/tello-ros2/install/tello_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins', 'SOCKS_PROXY': 'socks5://127.0.0.1:44995', 'HOME': '/home/roey', 'CHROME_DESKTOP': 'cursor.desktop', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': '127.0.0.1,::1,localhost', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-4453e446-2.5.-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/cursor.desktop', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1147', 'SYSTEMD_EXEC_PID': '1658', 'NO_COLOR': '1', 'CONDA_PKGS_DIRS': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/conda', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6607', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'COMPOSER_HOME': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/composer', 'https_proxy': 'http://127.0.0.1:41967', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'roey', 'FORCE_COLOR': '0', 'ALL_PROXY': 'http://127.0.0.1:41967', 'http_proxy': 'http://127.0.0.1:41967', 'JOURNAL_STREAM': '8:15447', 'BUN_INSTALL_CACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bun', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'GOMODCACHE': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-mod', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'roey', 'CP_HOME_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cocoapods', 'socks_proxy': 'socks5://127.0.0.1:44995', 'TERM': 'dumb', 'EVERYSPHERE_RIPGREP_PATH': '/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/rg', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models::/home/roey/nakai_ws/src/my_robot_description/models/textured_box:/home/roey/nakai_ws/src/my_robot_description/models/textured_box', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SOCKS5_PROXY': 'socks5://127.0.0.1:44995', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'POETRY_CACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/poetry', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/home/roey/.local/bin:/home/roey/.local/bin:/opt/ros/humble/bin:/home/roey/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/roey-IdeaPad-Gaming-3-15IMH05:@/tmp/.ICE-unix/1635,unix/roey-IdeaPad-Gaming-3-15IMH05:/tmp/.ICE-unix/1635', 'YARN_CACHE_FOLDER': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/yarn', 'INVOCATION_ID': '3f31e7185bd24af994fe4f04a91c7227', 'UV_CACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/uv', 'XDG_MENU_PREFIX': 'gnome-', 'VSCODE_PROCESS_TITLE': 'extension-host (agent-exec) [4-18]', 'PLAYWRIGHT_BROWSERS_PATH': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/playwright', 'XDG_RUNTIME_DIR': '/run/user/1000', 'BUNDLE_PATH': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bundle', 'GDK_BACKEND': 'x11', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'NX_CACHE_DIRECTORY': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nx', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': '', 'CYPRESS_CACHE_FOLDER': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cypress', 'CURSOR_TRACE_ID': '9a5215f120fa4fd4846e417e2012c30f', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PNPM_STORE_PATH': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pnpm-store', 'ROS_DOMAIN_ID': '25', 'AMENT_PREFIX_PATH': '/home/roey/tello-ros2/install/tello_msg:/opt/ros/humble', 'SHELL': '/bin/bash', 'CURSOR_SANDBOX': 'native', 'GOCACHE': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-build', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GIT_HTTP_PROXY': 'http://127.0.0.1:41967', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:', 'GJS_DEBUG_OUTPUT': 'stderr', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'socks5_proxy': 'socks5://127.0.0.1:44995', 'QT_IM_MODULE': 'ibus', 'NPM_CONFIG_CACHE': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/npm', 'PWD': '/home/roey/tello-ros2/build/tello', 'GRADLE_USER_HOME': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gradle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/roey/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0', 'GAZEBO_PLUGIN_PATH': '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GIT_HTTPS_PROXY': 'http://127.0.0.1:41967', 'PYTHONPATH': '/home/roey/tello-ros2/build/tello/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roey/tello-ros2/install/tello/lib/python3.10/site-packages:/home/roey/tello-ros2/install/tello_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:41967', 'TURBO_CACHE_DIR': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/turbo', 'COLCON': '1', '__CURSOR_SANDBOX_ENV_RESTORE': "builtin export HTTP_PROXY='http://127.0.0.1:41967'; builtin export HTTPS_PROXY='http://127.0.0.1:41967'; builtin export http_proxy='http://127.0.0.1:41967'; builtin export https_proxy='http://127.0.0.1:41967'; builtin export GIT_HTTP_PROXY='http://127.0.0.1:41967'; builtin export GIT_HTTPS_PROXY='http://127.0.0.1:41967'; builtin export SOCKS_PROXY='socks5://127.0.0.1:44995'; builtin export SOCKS5_PROXY='socks5://127.0.0.1:44995'; builtin export socks_proxy='socks5://127.0.0.1:44995'; builtin export socks5_proxy='socks5://127.0.0.1:44995'; builtin export ALL_PROXY='http://127.0.0.1:41967'; builtin export all_proxy='http://127.0.0.1:41967'; builtin export NO_PROXY='127.0.0.1,::1,localhost'; builtin export no_proxy='127.0.0.1,::1,localhost'", '_ZO_DOCTOR': '0', 'GEM_SPEC_CACHE': '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gem-specs', 'CURSOR_SANDBOX_LANDLOCK_STATUS': 'fully_enforced', 'VSCODE_PID': '6607', 'CMAKE_PREFIX_PATH': '/home/roey/tello-ros2/install/tello_msg'}, 'shell': False}
+[1.100806] (-) TimerEvent: {}
+[1.114197] (tello_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.156063] (tello_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.200898] (-) TimerEvent: {}
+[1.214324] (tello_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.228328] (tello_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.301011] (-) TimerEvent: {}
+[1.321716] (tello_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.322024] (tello_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.401094] (-) TimerEvent: {}
+[1.418538] (tello_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.421054] (tello_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.464225] (tello) StdoutLine: {'line': b'running egg_info\n'}
+[1.465167] (tello) StdoutLine: {'line': b'writing ../../../build/tello/tello.egg-info/PKG-INFO\n'}
+[1.465544] (tello) StdoutLine: {'line': b'writing dependency_links to ../../../build/tello/tello.egg-info/dependency_links.txt\n'}
+[1.466094] (tello) StdoutLine: {'line': b'writing entry points to ../../../build/tello/tello.egg-info/entry_points.txt\n'}
+[1.466350] (tello) StdoutLine: {'line': b'writing requirements to ../../../build/tello/tello.egg-info/requires.txt\n'}
+[1.466591] (tello) StdoutLine: {'line': b'writing top-level names to ../../../build/tello/tello.egg-info/top_level.txt\n'}
+[1.469786] (tello) StdoutLine: {'line': b"reading manifest file '../../../build/tello/tello.egg-info/SOURCES.txt'\n"}
+[1.470172] (tello) StdoutLine: {'line': b"adding license file 'LICENSE.txt'\n"}
+[1.471042] (tello) StdoutLine: {'line': b"writing manifest file '../../../build/tello/tello.egg-info/SOURCES.txt'\n"}
+[1.471315] (tello) StdoutLine: {'line': b'running build\n'}
+[1.471406] (tello) StdoutLine: {'line': b'running build_py\n'}
+[1.471699] (tello) StdoutLine: {'line': b'running install\n'}
+[1.472155] (tello) StdoutLine: {'line': b'running install_lib\n'}
+[1.473722] (tello) StdoutLine: {'line': b'running install_data\n'}
+[1.474022] (tello) StdoutLine: {'line': b'copying launch/tello.launch.py -> /home/roey/tello-ros2/install/tello/share/tello/launch\n'}
+[1.474267] (tello) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.476584] (tello) StdoutLine: {'line': b"removing '/home/roey/tello-ros2/install/tello/lib/python3.10/site-packages/tello-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[1.476977] (tello) StdoutLine: {'line': b'Copying ../../../build/tello/tello.egg-info to /home/roey/tello-ros2/install/tello/lib/python3.10/site-packages/tello-0.1.0-py3.10.egg-info\n'}
+[1.478019] (tello) StdoutLine: {'line': b'running install_scripts\n'}
+[1.501196] (-) TimerEvent: {}
+[1.507369] (tello) StdoutLine: {'line': b'Installing tello script to /home/roey/tello-ros2/install/tello/lib/tello\n'}
+[1.507796] (tello) StdoutLine: {'line': b"writing list of installed files to '/home/roey/tello-ros2/build/tello/install.log'\n"}
+[1.508068] (tello_control) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.530177] (tello_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.540488] (tello) CommandEnded: {'returncode': 0}
+[1.555691] (tello) JobEnded: {'identifier': 'tello', 'rc': 0}
+[1.559852] (tello_control) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.601291] (-) TimerEvent: {}
+[1.701496] (-) TimerEvent: {}
+[1.702257] (tello_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.729889] (tello_control) StdoutLine: {'line': b'-- Generating done\n'}
+[1.733271] (tello_control) StdoutLine: {'line': b'-- Build files have been written to: /home/roey/tello-ros2/build/tello_control\n'}
+[1.751583] (tello_control) CommandEnded: {'returncode': 0}
+[1.752999] (tello_control) JobProgress: {'identifier': 'tello_control', 'progress': 'build'}
+[1.754039] (tello_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roey/tello-ros2/build/tello_control', '--', '-j8', '-l8'], 'cwd': '/home/roey/tello-ros2/build/tello_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('npm_config_devdir', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/node-gyp'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/roey'), ('CURSOR_EXTENSION_HOST_ROLE', 'agent-exec'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('PUPPETEER_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/puppeteer'), ('HTTPS_PROXY', 'http://127.0.0.1:41967'), ('no_proxy', '127.0.0.1,::1,localhost'), ('LANGUAGE', 'en_IL:en'), ('USER', 'roey'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-il","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('CARGO_TARGET_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cargo-target'), ('CCACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/ccache'), ('all_proxy', 'http://127.0.0.1:41967'), ('CI', '1'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pip'), ('NUGET_PACKAGES', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nuget'), ('HOMEBREW_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/homebrew'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('SOCKS_PROXY', 'socks5://127.0.0.1:44995'), ('HOME', '/home/roey'), ('CHROME_DESKTOP', 'cursor.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', '127.0.0.1,::1,localhost'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4453e446-2.5.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1147'), ('SYSTEMD_EXEC_PID', '1658'), ('NO_COLOR', '1'), ('CONDA_PKGS_DIRS', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/conda'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6607'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COMPOSER_HOME', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/composer'), ('https_proxy', 'http://127.0.0.1:41967'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'roey'), ('FORCE_COLOR', '0'), ('ALL_PROXY', 'http://127.0.0.1:41967'), ('http_proxy', 'http://127.0.0.1:41967'), ('JOURNAL_STREAM', '8:15447'), ('BUN_INSTALL_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GOMODCACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-mod'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roey'), ('CP_HOME_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cocoapods'), ('socks_proxy', 'socks5://127.0.0.1:44995'), ('TERM', 'dumb'), ('EVERYSPHERE_RIPGREP_PATH', '/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/rg'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models::/home/roey/nakai_ws/src/my_robot_description/models/textured_box:/home/roey/nakai_ws/src/my_robot_description/models/textured_box'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SOCKS5_PROXY', 'socks5://127.0.0.1:44995'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('POETRY_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/poetry'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/roey/.local/bin:/home/roey/.local/bin:/opt/ros/humble/bin:/home/roey/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/roey-IdeaPad-Gaming-3-15IMH05:@/tmp/.ICE-unix/1635,unix/roey-IdeaPad-Gaming-3-15IMH05:/tmp/.ICE-unix/1635'), ('YARN_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/yarn'), ('INVOCATION_ID', '3f31e7185bd24af994fe4f04a91c7227'), ('UV_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/uv'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host (agent-exec) [4-18]'), ('PLAYWRIGHT_BROWSERS_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/playwright'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('BUNDLE_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bundle'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_CACHE_DIRECTORY', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nx'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CYPRESS_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cypress'), ('CURSOR_TRACE_ID', '9a5215f120fa4fd4846e417e2012c30f'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('PNPM_STORE_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pnpm-store'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('CURSOR_SANDBOX', 'native'), ('GOCACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-build'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_HTTP_PROXY', 'http://127.0.0.1:41967'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('socks5_proxy', 'socks5://127.0.0.1:44995'), ('QT_IM_MODULE', 'ibus'), ('NPM_CONFIG_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/npm'), ('PWD', '/home/roey/tello-ros2/build/tello_control'), ('GRADLE_USER_HOME', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gradle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/roey/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GIT_HTTPS_PROXY', 'http://127.0.0.1:41967'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:41967'), ('TURBO_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/turbo'), ('COLCON', '1'), ('__CURSOR_SANDBOX_ENV_RESTORE', "builtin export HTTP_PROXY='http://127.0.0.1:41967'; builtin export HTTPS_PROXY='http://127.0.0.1:41967'; builtin export http_proxy='http://127.0.0.1:41967'; builtin export https_proxy='http://127.0.0.1:41967'; builtin export GIT_HTTP_PROXY='http://127.0.0.1:41967'; builtin export GIT_HTTPS_PROXY='http://127.0.0.1:41967'; builtin export SOCKS_PROXY='socks5://127.0.0.1:44995'; builtin export SOCKS5_PROXY='socks5://127.0.0.1:44995'; builtin export socks_proxy='socks5://127.0.0.1:44995'; builtin export socks5_proxy='socks5://127.0.0.1:44995'; builtin export ALL_PROXY='http://127.0.0.1:41967'; builtin export all_proxy='http://127.0.0.1:41967'; builtin export NO_PROXY='127.0.0.1,::1,localhost'; builtin export no_proxy='127.0.0.1,::1,localhost'"), ('_ZO_DOCTOR', '0'), ('GEM_SPEC_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gem-specs'), ('CURSOR_SANDBOX_LANDLOCK_STATUS', 'fully_enforced'), ('VSCODE_PID', '6607'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.801612] (-) TimerEvent: {}
+[1.811706] (tello_control) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tello_control\n'}
+[1.829854] (tello_control) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/tello_control.dir/src/main.cpp.o\n'}
+[1.901741] (-) TimerEvent: {}
+[2.001952] (-) TimerEvent: {}
+[2.102273] (-) TimerEvent: {}
+[2.202549] (-) TimerEvent: {}
+[2.302776] (-) TimerEvent: {}
+[2.403058] (-) TimerEvent: {}
+[2.503322] (-) TimerEvent: {}
+[2.603630] (-) TimerEvent: {}
+[2.703900] (-) TimerEvent: {}
+[2.804107] (-) TimerEvent: {}
+[2.904284] (-) TimerEvent: {}
+[3.004511] (-) TimerEvent: {}
+[3.104687] (-) TimerEvent: {}
+[3.204960] (-) TimerEvent: {}
+[3.305236] (-) TimerEvent: {}
+[3.405462] (-) TimerEvent: {}
+[3.505645] (-) TimerEvent: {}
+[3.605830] (-) TimerEvent: {}
+[3.706013] (-) TimerEvent: {}
+[3.806191] (-) TimerEvent: {}
+[3.906369] (-) TimerEvent: {}
+[4.006522] (-) TimerEvent: {}
+[4.106702] (-) TimerEvent: {}
+[4.206882] (-) TimerEvent: {}
+[4.307064] (-) TimerEvent: {}
+[4.407279] (-) TimerEvent: {}
+[4.507499] (-) TimerEvent: {}
+[4.607676] (-) TimerEvent: {}
+[4.707864] (-) TimerEvent: {}
+[4.809507] (-) TimerEvent: {}
+[4.909742] (-) TimerEvent: {}
+[5.009954] (-) TimerEvent: {}
+[5.110140] (-) TimerEvent: {}
+[5.210341] (-) TimerEvent: {}
+[5.310522] (-) TimerEvent: {}
+[5.410747] (-) TimerEvent: {}
+[5.510935] (-) TimerEvent: {}
+[5.613504] (-) TimerEvent: {}
+[5.713741] (-) TimerEvent: {}
+[5.813987] (-) TimerEvent: {}
+[5.914208] (-) TimerEvent: {}
+[6.014439] (-) TimerEvent: {}
+[6.114632] (-) TimerEvent: {}
+[6.214826] (-) TimerEvent: {}
+[6.315060] (-) TimerEvent: {}
+[6.415255] (-) TimerEvent: {}
+[6.515501] (-) TimerEvent: {}
+[6.615701] (-) TimerEvent: {}
+[6.715893] (-) TimerEvent: {}
+[6.816085] (-) TimerEvent: {}
+[6.916309] (-) TimerEvent: {}
+[7.016490] (-) TimerEvent: {}
+[7.116681] (-) TimerEvent: {}
+[7.216887] (-) TimerEvent: {}
+[7.317124] (-) TimerEvent: {}
+[7.417318] (-) TimerEvent: {}
+[7.517500] (-) TimerEvent: {}
+[7.617737] (-) TimerEvent: {}
+[7.718190] (-) TimerEvent: {}
+[7.818445] (-) TimerEvent: {}
+[7.918685] (-) TimerEvent: {}
+[8.018915] (-) TimerEvent: {}
+[8.119151] (-) TimerEvent: {}
+[8.219359] (-) TimerEvent: {}
+[8.319550] (-) TimerEvent: {}
+[8.419761] (-) TimerEvent: {}
+[8.519972] (-) TimerEvent: {}
+[8.620171] (-) TimerEvent: {}
+[8.720382] (-) TimerEvent: {}
+[8.820631] (-) TimerEvent: {}
+[8.920924] (-) TimerEvent: {}
+[9.021229] (-) TimerEvent: {}
+[9.121495] (-) TimerEvent: {}
+[9.221723] (-) TimerEvent: {}
+[9.321957] (-) TimerEvent: {}
+[9.422179] (-) TimerEvent: {}
+[9.522399] (-) TimerEvent: {}
+[9.622645] (-) TimerEvent: {}
+[9.722906] (-) TimerEvent: {}
+[9.823139] (-) TimerEvent: {}
+[9.923335] (-) TimerEvent: {}
+[10.023487] (-) TimerEvent: {}
+[10.123682] (-) TimerEvent: {}
+[10.223877] (-) TimerEvent: {}
+[10.324084] (-) TimerEvent: {}
+[10.424277] (-) TimerEvent: {}
+[10.524480] (-) TimerEvent: {}
+[10.624677] (-) TimerEvent: {}
+[10.724873] (-) TimerEvent: {}
+[10.825069] (-) TimerEvent: {}
+[10.925267] (-) TimerEvent: {}
+[11.025469] (-) TimerEvent: {}
+[11.125664] (-) TimerEvent: {}
+[11.225859] (-) TimerEvent: {}
+[11.326055] (-) TimerEvent: {}
+[11.426244] (-) TimerEvent: {}
+[11.528583] (-) TimerEvent: {}
+[11.628823] (-) TimerEvent: {}
+[11.729070] (-) TimerEvent: {}
+[11.829365] (-) TimerEvent: {}
+[11.929520] (-) TimerEvent: {}
+[12.029707] (-) TimerEvent: {}
+[12.129895] (-) TimerEvent: {}
+[12.230075] (-) TimerEvent: {}
+[12.330291] (-) TimerEvent: {}
+[12.430510] (-) TimerEvent: {}
+[12.530692] (-) TimerEvent: {}
+[12.630933] (-) TimerEvent: {}
+[12.731118] (-) TimerEvent: {}
+[12.831343] (-) TimerEvent: {}
+[12.931487] (-) TimerEvent: {}
+[13.031673] (-) TimerEvent: {}
+[13.131855] (-) TimerEvent: {}
+[13.232040] (-) TimerEvent: {}
+[13.332256] (-) TimerEvent: {}
+[13.432484] (-) TimerEvent: {}
+[13.532668] (-) TimerEvent: {}
+[13.632866] (-) TimerEvent: {}
+[13.733038] (-) TimerEvent: {}
+[13.833249] (-) TimerEvent: {}
+[13.933496] (-) TimerEvent: {}
+[14.033699] (-) TimerEvent: {}
+[14.133876] (-) TimerEvent: {}
+[14.234065] (-) TimerEvent: {}
+[14.334270] (-) TimerEvent: {}
+[14.434481] (-) TimerEvent: {}
+[14.534652] (-) TimerEvent: {}
+[14.634823] (-) TimerEvent: {}
+[14.735030] (-) TimerEvent: {}
+[14.835237] (-) TimerEvent: {}
+[14.935412] (-) TimerEvent: {}
+[15.035617] (-) TimerEvent: {}
+[15.135796] (-) TimerEvent: {}
+[15.236003] (-) TimerEvent: {}
+[15.336178] (-) TimerEvent: {}
+[15.436355] (-) TimerEvent: {}
+[15.536535] (-) TimerEvent: {}
+[15.638670] (-) TimerEvent: {}
+[15.738861] (-) TimerEvent: {}
+[15.839034] (-) TimerEvent: {}
+[15.939218] (-) TimerEvent: {}
+[16.039400] (-) TimerEvent: {}
+[16.139603] (-) TimerEvent: {}
+[16.239795] (-) TimerEvent: {}
+[16.340001] (-) TimerEvent: {}
+[16.440208] (-) TimerEvent: {}
+[16.540530] (-) TimerEvent: {}
+[16.640872] (-) TimerEvent: {}
+[16.741203] (-) TimerEvent: {}
+[16.841423] (-) TimerEvent: {}
+[16.941629] (-) TimerEvent: {}
+[17.041900] (-) TimerEvent: {}
+[17.142187] (-) TimerEvent: {}
+[17.196330] (tello_control) StdoutLine: {'line': b'[100%] Linking CXX executable tello_control\n'}
+[17.242335] (-) TimerEvent: {}
+[17.342607] (-) TimerEvent: {}
+[17.442879] (-) TimerEvent: {}
+[17.543189] (-) TimerEvent: {}
+[17.643412] (-) TimerEvent: {}
+[17.743611] (-) TimerEvent: {}
+[17.843791] (-) TimerEvent: {}
+[17.943971] (-) TimerEvent: {}
+[18.044163] (-) TimerEvent: {}
+[18.144380] (-) TimerEvent: {}
+[18.244571] (-) TimerEvent: {}
+[18.256831] (tello_control) StdoutLine: {'line': b'[100%] Built target tello_control\n'}
+[18.269779] (tello_control) CommandEnded: {'returncode': 0}
+[18.300822] (tello_control) JobProgress: {'identifier': 'tello_control', 'progress': 'install'}
+[18.313433] (tello_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roey/tello-ros2/build/tello_control'], 'cwd': '/home/roey/tello-ros2/build/tello_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('npm_config_devdir', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/node-gyp'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/roey'), ('CURSOR_EXTENSION_HOST_ROLE', 'agent-exec'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('PUPPETEER_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/puppeteer'), ('HTTPS_PROXY', 'http://127.0.0.1:41967'), ('no_proxy', '127.0.0.1,::1,localhost'), ('LANGUAGE', 'en_IL:en'), ('USER', 'roey'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-il","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('CARGO_TARGET_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cargo-target'), ('CCACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/ccache'), ('all_proxy', 'http://127.0.0.1:41967'), ('CI', '1'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pip'), ('NUGET_PACKAGES', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nuget'), ('HOMEBREW_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/homebrew'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('SOCKS_PROXY', 'socks5://127.0.0.1:44995'), ('HOME', '/home/roey'), ('CHROME_DESKTOP', 'cursor.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', '127.0.0.1,::1,localhost'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4453e446-2.5.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1147'), ('SYSTEMD_EXEC_PID', '1658'), ('NO_COLOR', '1'), ('CONDA_PKGS_DIRS', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/conda'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6607'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COMPOSER_HOME', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/composer'), ('https_proxy', 'http://127.0.0.1:41967'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'roey'), ('FORCE_COLOR', '0'), ('ALL_PROXY', 'http://127.0.0.1:41967'), ('http_proxy', 'http://127.0.0.1:41967'), ('JOURNAL_STREAM', '8:15447'), ('BUN_INSTALL_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GOMODCACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-mod'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roey'), ('CP_HOME_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cocoapods'), ('socks_proxy', 'socks5://127.0.0.1:44995'), ('TERM', 'dumb'), ('EVERYSPHERE_RIPGREP_PATH', '/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/rg'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models::/home/roey/nakai_ws/src/my_robot_description/models/textured_box:/home/roey/nakai_ws/src/my_robot_description/models/textured_box'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SOCKS5_PROXY', 'socks5://127.0.0.1:44995'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('POETRY_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/poetry'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/roey/.local/bin:/home/roey/.local/bin:/opt/ros/humble/bin:/home/roey/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/roey-IdeaPad-Gaming-3-15IMH05:@/tmp/.ICE-unix/1635,unix/roey-IdeaPad-Gaming-3-15IMH05:/tmp/.ICE-unix/1635'), ('YARN_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/yarn'), ('INVOCATION_ID', '3f31e7185bd24af994fe4f04a91c7227'), ('UV_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/uv'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host (agent-exec) [4-18]'), ('PLAYWRIGHT_BROWSERS_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/playwright'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('BUNDLE_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/bundle'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_CACHE_DIRECTORY', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/nx'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('CYPRESS_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/cypress'), ('CURSOR_TRACE_ID', '9a5215f120fa4fd4846e417e2012c30f'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('PNPM_STORE_PATH', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/pnpm-store'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('CURSOR_SANDBOX', 'native'), ('GOCACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/go-build'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_HTTP_PROXY', 'http://127.0.0.1:41967'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('socks5_proxy', 'socks5://127.0.0.1:44995'), ('QT_IM_MODULE', 'ibus'), ('NPM_CONFIG_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/npm'), ('PWD', '/home/roey/tello-ros2/build/tello_control'), ('GRADLE_USER_HOME', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gradle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/roey/.config/Cursor/CachedData/7d96c2a03bb088ad367615e9da1a3fe20fbbc6a0'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GIT_HTTPS_PROXY', 'http://127.0.0.1:41967'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:41967'), ('TURBO_CACHE_DIR', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/turbo'), ('COLCON', '1'), ('__CURSOR_SANDBOX_ENV_RESTORE', "builtin export HTTP_PROXY='http://127.0.0.1:41967'; builtin export HTTPS_PROXY='http://127.0.0.1:41967'; builtin export http_proxy='http://127.0.0.1:41967'; builtin export https_proxy='http://127.0.0.1:41967'; builtin export GIT_HTTP_PROXY='http://127.0.0.1:41967'; builtin export GIT_HTTPS_PROXY='http://127.0.0.1:41967'; builtin export SOCKS_PROXY='socks5://127.0.0.1:44995'; builtin export SOCKS5_PROXY='socks5://127.0.0.1:44995'; builtin export socks_proxy='socks5://127.0.0.1:44995'; builtin export socks5_proxy='socks5://127.0.0.1:44995'; builtin export ALL_PROXY='http://127.0.0.1:41967'; builtin export all_proxy='http://127.0.0.1:41967'; builtin export NO_PROXY='127.0.0.1,::1,localhost'; builtin export no_proxy='127.0.0.1,::1,localhost'"), ('_ZO_DOCTOR', '0'), ('GEM_SPEC_CACHE', '/tmp/cursor-sandbox-cache/d35a62b992ebc883fdb3575f27733d72/gem-specs'), ('CURSOR_SANDBOX_LANDLOCK_STATUS', 'fully_enforced'), ('VSCODE_PID', '6607'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[18.322647] (tello_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.322994] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/lib/tello_control/tello_control\n'}
+[18.327593] (tello_control) StdoutLine: {'line': b'-- Set runtime path of "/home/roey/tello-ros2/install/tello_control/lib/tello_control/tello_control" to ""\n'}
+[18.328084] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/rviz.rviz\n'}
+[18.328315] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/package_run_dependencies/tello_control\n'}
+[18.328679] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/parent_prefix_path/tello_control\n'}
+[18.328887] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/ament_prefix_path.sh\n'}
+[18.329265] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/ament_prefix_path.dsv\n'}
+[18.329358] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/path.sh\n'}
+[18.329453] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/environment/path.dsv\n'}
+[18.329550] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.bash\n'}
+[18.329631] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.sh\n'}
+[18.329709] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.zsh\n'}
+[18.329787] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/local_setup.dsv\n'}
+[18.329864] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/package.dsv\n'}
+[18.329940] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/ament_index/resource_index/packages/tello_control\n'}
+[18.330017] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/cmake/tello_controlConfig.cmake\n'}
+[18.330094] (tello_control) StdoutLine: {'line': b'-- Up-to-date: /home/roey/tello-ros2/install/tello_control/share/tello_control/cmake/tello_controlConfig-version.cmake\n'}
+[18.330182] (tello_control) StdoutLine: {'line': b'-- Installing: /home/roey/tello-ros2/install/tello_control/share/tello_control/package.xml\n'}
+[18.330895] (tello_control) CommandEnded: {'returncode': 0}
+[18.344668] (-) TimerEvent: {}
+[18.380148] (tello_control) JobEnded: {'identifier': 'tello_control', 'rc': 0}
+[18.380881] (-) EventReactorShutdown: {}

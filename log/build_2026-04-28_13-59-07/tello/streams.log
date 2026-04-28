@@ -1,0 +1,25 @@
+[1.017s] Invoking command in '/home/roey/tello-ros2/workspace/src/tello': AMENT_PREFIX_PATH=/home/roey/tello-ros2/install/tello_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roey/tello-ros2/install/tello_msg LD_LIBRARY_PATH=/home/roey/tello-ros2/install/tello_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/roey/tello-ros2/build/tello/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roey/tello-ros2/install/tello/lib/python3.10/site-packages:/home/roey/tello-ros2/install/tello_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/tello build --build-base /home/roey/tello-ros2/build/tello/build install --record /home/roey/tello-ros2/build/tello/install.log --single-version-externally-managed install_data
+[1.393s] running egg_info
+[1.393s] writing ../../../build/tello/tello.egg-info/PKG-INFO
+[1.394s] writing dependency_links to ../../../build/tello/tello.egg-info/dependency_links.txt
+[1.394s] writing entry points to ../../../build/tello/tello.egg-info/entry_points.txt
+[1.394s] writing requirements to ../../../build/tello/tello.egg-info/requires.txt
+[1.394s] writing top-level names to ../../../build/tello/tello.egg-info/top_level.txt
+[1.396s] reading manifest file '../../../build/tello/tello.egg-info/SOURCES.txt'
+[1.397s] adding license file 'LICENSE.txt'
+[1.397s] writing manifest file '../../../build/tello/tello.egg-info/SOURCES.txt'
+[1.398s] running build
+[1.398s] running build_py
+[1.398s] copying tello/node.py -> /home/roey/tello-ros2/build/tello/build/lib/tello
+[1.398s] running install
+[1.398s] running install_lib
+[1.399s] copying /home/roey/tello-ros2/build/tello/build/lib/tello/node.py -> /home/roey/tello-ros2/install/tello/lib/python3.10/site-packages/tello
+[1.400s] byte-compiling /home/roey/tello-ros2/install/tello/lib/python3.10/site-packages/tello/node.py to node.cpython-310.pyc
+[1.406s] running install_data
+[1.407s] running install_egg_info
+[1.409s] removing '/home/roey/tello-ros2/install/tello/lib/python3.10/site-packages/tello-0.1.0-py3.10.egg-info' (and everything under it)
+[1.410s] Copying ../../../build/tello/tello.egg-info to /home/roey/tello-ros2/install/tello/lib/python3.10/site-packages/tello-0.1.0-py3.10.egg-info
+[1.411s] running install_scripts
+[1.439s] Installing tello script to /home/roey/tello-ros2/install/tello/lib/tello
+[1.439s] writing list of installed files to '/home/roey/tello-ros2/build/tello/install.log'
+[1.469s] Invoked command in '/home/roey/tello-ros2/workspace/src/tello' returned '0': AMENT_PREFIX_PATH=/home/roey/tello-ros2/install/tello_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roey/tello-ros2/install/tello_msg LD_LIBRARY_PATH=/home/roey/tello-ros2/install/tello_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/roey/tello-ros2/build/tello/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roey/tello-ros2/install/tello/lib/python3.10/site-packages:/home/roey/tello-ros2/install/tello_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/tello build --build-base /home/roey/tello-ros2/build/tello/build install --record /home/roey/tello-ros2/build/tello/install.log --single-version-externally-managed install_data

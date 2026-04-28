@@ -1,0 +1,50 @@
+[0.019s] Invoking command in '/home/roey/tello-ros2/build/orbslam2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/slam/src/orbslam2 -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/orbslam2
+[0.083s] -- The C compiler identification is GNU 11.4.0
+[0.156s] -- The CXX compiler identification is GNU 11.4.0
+[0.168s] -- Detecting C compiler ABI info
+[0.253s] -- Detecting C compiler ABI info - done
+[0.264s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.264s] -- Detecting C compile features
+[0.264s] -- Detecting C compile features - done
+[0.268s] -- Detecting CXX compiler ABI info
+[0.365s] -- Detecting CXX compiler ABI info - done
+[0.376s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.376s] -- Detecting CXX compile features
+[0.377s] -- Detecting CXX compile features - done
+[0.383s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.591s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.731s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.823s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.831s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.843s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.861s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.884s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.955s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.961s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.082s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.120s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.176s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.190s] -- Looking for pthread.h
+[1.276s] -- Looking for pthread.h - found
+[1.276s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.363s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.365s] -- Found Threads: TRUE  
+[1.461s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.525s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.568s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.586s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[1.609s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[1.631s] [31mCMake Error at CMakeLists.txt:24 (find_package):
+[1.631s]   Could not find a configuration file for package "OpenCV" that is compatible
+[1.631s]   with requested version "3".
+[1.632s] 
+[1.632s]   The following configuration files were considered but not accepted:
+[1.632s] 
+[1.632s]     /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.5.4
+[1.632s]     /lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.5.4
+[1.632s] 
+[1.632s] 
+[1.632s] [0m
+[1.632s] -- Configuring incomplete, errors occurred!
+[1.633s] See also "/home/roey/tello-ros2/build/orbslam2/CMakeFiles/CMakeOutput.log".
+[1.644s] Invoked command in '/home/roey/tello-ros2/build/orbslam2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roey/tello-ros2/slam/src/orbslam2 -DCMAKE_INSTALL_PREFIX=/home/roey/tello-ros2/install/orbslam2
