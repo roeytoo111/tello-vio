@@ -6,6 +6,7 @@
 #include<algorithm>
 #include<fstream>
 #include<chrono>
+#include <atomic>
 
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
@@ -29,6 +30,7 @@ public:
 
     ~MonocularSlamNode();
 
+    void ShutdownAndSave(const std::string &trajectory_path = "KeyFrameTrajectory.txt");
 
 private: 
 
@@ -56,6 +58,7 @@ private:
 
 
     ORB_SLAM2::System* m_SLAM;
+    std::atomic<bool> m_shutdown_requested{false};
 
     std::mutex mMutex;
 

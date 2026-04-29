@@ -1,17 +1,19 @@
-# DJI Tello ROS2
-- [DJI Tello](https://www.ryzerobotics.com/tello) driver for ROS 2 based on [DJITelloPy](https://github.com/damiafuentes/DJITelloPy) that uses the [official SDK](https://github.com/dji-sdk/Tello-Python) for the drone.
-- Can be used to control multiple drones both using the swarm functionality (only for [Tello EDU](https://www.ryzerobotics.com/tello-edu)) or using multiple WLAN with regular [Tello](https://www.ryzerobotics.com/tello) drones.
-- This project was developed as a way of learning ROS 2 and evaluate the viability of moving other in progress projects from ROS 1 to ROS 2.
-- Ii is recommended to update the Tello firmware to the latest version available 
-- Project workspace is divided into sub-workspaces that contain different logic.
+# Tello VIO (ROS 2 Humble, Ubuntu 22.04)
+
+זהו **פרויקט מחקרי** שמטרתו ליישם ולחקור **Visual-Inertial Odometry (VIO)** על רחפן **DJI Tello** באמצעות **ROS 2 Humble על Ubuntu 22.04**.
+
+הפרויקט **בתהליך**: כרגע אני מנסה להבין כיצד לשלב VIO על גבי ה‑Tello, ולממש בצורה הטובה ביותר שיטה זו של **שיערוך מיקום** (pose estimation) בעזרת מצלמה ו‑IMU.
+
+בנוסף, הריפו כולל דרייבר ROS 2 עבור ה‑Tello (מבוסס [DJITelloPy](https://github.com/damiafuentes/DJITelloPy) וה‑SDK הרשמי: [Tello-Python](https://github.com/dji-sdk/Tello-Python)). ניתן גם לשלוט במספר רחפנים (Swarm נתמך ב‑[Tello EDU](https://www.ryzerobotics.com/tello-edu)).
+
+- מומלץ לעדכן את קושחת ה‑Tello לגרסה העדכנית.
+- ה‑workspace מחולק לתת‑workspaces שמכילים לוגיקה שונה.
   - `tello` package is the main package, includes access to the drone information, camera image and  control.
   - `tello_msg` package defines custom messages to access specific Tello data.
     - Defines the `TelloStatus`, `TelloID` and `TelloWifiConfig` messages 
   - `tello_control` package is a sample control package that displays the drone image and provides keyboard control.
     - Shows a live camera window and overlays battery + controls.
     - Controls: `T` takeoff, `L` land, `E` emergency, `F` flip forward, arrows/WASD movement (`W/S` up/down, `A/D` yaw).
-
-<img src="readme/ros.jpg" width="380"><img src="readme/drone_b.jpg" width="380">
 
 - Bellow is the list of topics published and consumed by the `tello` package
 - The list of published topics alongside their description and frequency. These topics are only published when some node subscribed to them, otherwise they are not processed.
@@ -69,8 +71,6 @@ ros2 run camera_calibration cameracalibrator --size 7x9 --square 0.16 image:=/im
 
 - Take as many frame as possible and measure your check board grid size to ensure good accuracy in the process. When the process ends a `calibrationdata.tar.gz` will be created in the `/tmp` path.
 
-<img src="readme/calibration.jpg" width="380">
-
 
 
 ### Launch File
@@ -103,8 +103,6 @@ ros2 launch tello tello.launch.py video_backend:=opencv video_scale:=0.5
 - The motor drivers in the DJI Tello overheat after a while when the drone is not flying. To cool down the drivers i have removed the plastic section on top of the heat spreader (as seen in the picture).
 - If you are comfortable with leaving the PCB exposed removing the plastic cover should result in even better thermals.
 - If possible place the drone on top of an old computer fan or use a laptop cooler to prevent the drone from shutting down due to overheating.
-
-<img src="readme/drone_a.jpg" width="380">
 
 ### Install
 
@@ -149,6 +147,17 @@ ros2 run orbslam2 mono <VOCABULARY FILE> <CONFIG_FILE>
 
 - The vocabulary file can be obtained from the ORB_SLAM2 repository ( `ORB_SLAM2/Vocabulary/ORBvoc.txt`).
 - Sample configuration files can be found inside the package at `orbslam2/src/monocular/config.yaml` for monocular SLAM.
+
+### מקורות תיאורטיים (ייכנסו בהמשך)
+
+הסעיף הזה מיועד לריכוז מקורות ידע תיאורטיים על VIO/SLAM/State Estimation שאוסיף בהמשך. כרגע הוא משמש כ-placeholder:
+
+- **VIO / Visual-Inertial Navigation**: TBD
+- **State Estimation / Filtering (EKF/MSCKF)**: TBD
+- **Optimization / Factor Graphs (Bundle Adjustment, Smoothing)**: TBD
+- **IMU Preintegration**: TBD
+- **Camera Models & Calibration**: TBD
+- **ROS 2 + VIO integration notes**: TBD
 
 
 
@@ -212,53 +221,10 @@ ros2 bag play -s rosbag_v2 <path_to_bagfile>
 
 
 
-### Ubuntu Based Linux Distros
+### Ubuntu 22.04 notes
 
-- When installing on ubuntu based distros it might be required to change the distro codename so that the `lsb_release -cs` command returns the correct ubuntu base distribution.
-- To change the output of the `lsb_release` command edit the `/etc/os-release` file. For ubuntu 20.04 the codename should be `focal`.
-- Edit the file to contain the value `UBUNTU_CODENAME=focal`.
-
+- This repository targets **Ubuntu 22.04 (jammy)** + **ROS 2 Humble**.
+- If any dependency scripts rely on `lsb_release -cs`, it should return `jammy` on Ubuntu 22.04.
 
 
-### Windows Subsystem for Linux (WSL)
-
-- Install WSL2 from the windows store or using the commands bellow, install Ubuntu 20.04 as the SO over the WSL overlay.
-
-```powershell
-# Install WSL 2
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-
-# Enable WSL 2
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-
-# Check WSL version
-wsl.exe --set-default-version 2
-wsl -l -v
-```
-
-- Install a [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) to be used as a X11 display server required to run GUI applications.
-  - "Native opengl" unchecked
-  - "Disable access control" checked
-- Create a shortcut for VcXSrv with the following parameters
-
-```powershell
-"C:\Program Files\VcXsrv\vcxsrv.exe" :0 -ac -terminate -lesspointer -multiwindow -clipboard -wgl -dpi auto
-```
-
-- To enable the access to the installed server add the display address to the `.bashrc` file
-
-```bash
-export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
-export LIBGL_ALWAYS_INDIRECT=0
-```
-
-- If you are using Visual Studio Code as and IDE you can configure for [remote WSL development](https://code.visualstudio.com/docs/cpp/config-wsl), allowing to debug code and interact with the WSL terminal.
-- If you require CUDA acceleration you can also install [NVidia CUDA drivers for WSL2](https://developer.nvidia.com/blog/announcing-cuda-on-windows-subsystem-for-linux-2/)
-
-- If you get `Clock skew detected. Your build may be incomplete.` while compiling the code run the following commands or install the [wsl-clock](https://github.com/stuartleeks/wsl-clock) tool to automatically fix the clock drift problems.
-
-```bash
-sudo apt install ntpdate
-sudo ntpdate time.windows.com
-```
 

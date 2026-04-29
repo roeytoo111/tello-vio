@@ -38,12 +38,28 @@ MonocularSlamNode::MonocularSlamNode(ORB_SLAM2::System* pSLAM, const string &str
 
 MonocularSlamNode::~MonocularSlamNode()
 {
-    // Stop all threads
+    // Best-effort: the normal path is main() calling ShutdownAndSave().
+    try {
+        ShutdownAndSave("KeyFrameTrajectory.txt");
+    } catch (...) {
+        // Avoid throwing from destructor.
+    }
+
+}
+
+void MonocularSlamNode::ShutdownAndSave(const std::string &trajectory_path)
+{
+    if (m_shutdown_requested.exchange(true)) {
+        return;
+    }
+    if (!m_SLAM) {
+        return;
+    }
+
+    std::lock_guard<std::mutex> lock(mMutex);
+
     m_SLAM->Shutdown();
-
-    // Save camera trajectory
-    m_SLAM->SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
-
+    m_SLAM->SaveKeyFrameTrajectoryTUM(trajectory_path);
 }
 
 

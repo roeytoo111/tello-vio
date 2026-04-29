@@ -25,6 +25,8 @@ int main(int argc, char **argv)
 
     rclcpp::spin(node);
     
+    // Stop threads and persist trajectory before tearing down ROS.
+    node->ShutdownAndSave("KeyFrameTrajectory.txt");
 
     rclcpp::shutdown();
 
