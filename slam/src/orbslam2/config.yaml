@@ -5,22 +5,22 @@
 #--------------------------------------------------------------------------------------------
 
 # Camera calibration and distortion parameters (OpenCV) 
-Camera.fx: 517.306408
-Camera.fy: 516.469215
-Camera.cx: 318.643040
-Camera.cy: 255.313989
+Camera.fx: 919.424717
+Camera.fy: 911.926190
+Camera.cx: 459.655779
+Camera.cy: 323.551997
 
-Camera.k1: 0.262383
-Camera.k2: -0.953104
-Camera.p1: -0.005358
-Camera.p2: 0.002628
-Camera.k3: 1.163314
+Camera.k1: -0.041948
+Camera.k2: 0.048619
+Camera.p1: -0.022789
+Camera.p2: -0.004038
+Camera.k3: 0.0
 
 # Camera frames per second 
 Camera.fps: 30.0
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
-Camera.RGB: 1
+Camera.RGB: 0
 
 #--------------------------------------------------------------------------------------------
 # ORB Parameters

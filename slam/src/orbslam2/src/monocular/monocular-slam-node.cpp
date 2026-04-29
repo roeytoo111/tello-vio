@@ -1,6 +1,7 @@
 #include "monocular-slam-node.hpp"
 
 #include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 
 #include "MapPoint.h"
 
@@ -17,8 +18,11 @@ MonocularSlamNode::MonocularSlamNode(ORB_SLAM2::System* pSLAM, const string &str
     m_SLAM(pSLAM)
 {
 
+    this->declare_parameter<std::string>("image_topic", "/image_raw");
+    const auto image_topic = this->get_parameter("image_topic").as_string();
+
     m_image_subscriber = this->create_subscription<ImageMsg>(
-        "camera",
+        image_topic,
         rclcpp::SensorDataQoS(),
         std::bind(&MonocularSlamNode::GrabImage, this, std::placeholders::_1));
 
@@ -58,6 +62,11 @@ void MonocularSlamNode::ShutdownAndSave(const std::string &trajectory_path)
 
     std::lock_guard<std::mutex> lock(mMutex);
 
+    const auto kfs = m_SLAM->GetAllKeyFrames();
+    const auto mps = m_SLAM->GetAllMapPoints();
+    RCLCPP_INFO(this->get_logger(), "ShutdownAndSave: keyframes=%zu mappoints=%zu output=%s",
+                kfs.size(), mps.size(), trajectory_path.c_str());
+
     m_SLAM->Shutdown();
     m_SLAM->SaveKeyFrameTrajectoryTUM(trajectory_path);
 }
@@ -77,8 +86,23 @@ void MonocularSlamNode::GrabImage(const ImageMsg::SharedPtr msg)
         return;
     }
     
+    // Force grayscale input to ORB-SLAM2 to avoid RGB/BGR encoding mismatches.
+    cv::Mat im_gray;
+    if (m_cvImPtr->image.channels() == 1) {
+        im_gray = m_cvImPtr->image;
+    } else if (m_cvImPtr->image.channels() == 3) {
+        // Most ROS image pipelines are BGR by default; if this is actually RGB it will
+        // still produce a valid grayscale image (just slightly different weights).
+        cv::cvtColor(m_cvImPtr->image, im_gray, cv::COLOR_BGR2GRAY);
+    } else if (m_cvImPtr->image.channels() == 4) {
+        cv::cvtColor(m_cvImPtr->image, im_gray, cv::COLOR_BGRA2GRAY);
+    } else {
+        RCLCPP_ERROR(this->get_logger(), "Unsupported image channels: %d", m_cvImPtr->image.channels());
+        return;
+    }
+
     const rclcpp::Time stamp(msg->header.stamp);
-    Tcw = m_SLAM->TrackMonocular(m_cvImPtr->image, stamp.seconds());
+    Tcw = m_SLAM->TrackMonocular(im_gray, stamp.seconds());
 
     UpdateSLAMState();
     UpdateMapState();
@@ -312,8 +336,8 @@ cv::Mat MonocularSlamNode::DrawFrame()
         }
     } // destroy scoped mutex -> release mutex
 
-    if(im.channels()<3) //this should be always true
-        cvtColor(im,im,CV_GRAY2BGR);
+    if(im.channels() < 3)
+        cvtColor(im, im, cv::COLOR_GRAY2BGR);
 
     //Draw
     if(state==ORB_SLAM2::Tracking::NOT_INITIALIZED) //INITIALIZING

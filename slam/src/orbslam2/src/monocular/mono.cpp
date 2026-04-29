@@ -8,6 +8,8 @@
 
 #include "System.h"
 
+#include <unistd.h>
+#include <limits.h>
 
 int main(int argc, char **argv)
 {
@@ -26,7 +28,12 @@ int main(int argc, char **argv)
     rclcpp::spin(node);
     
     // Stop threads and persist trajectory before tearing down ROS.
-    node->ShutdownAndSave("KeyFrameTrajectory.txt");
+    char cwd[PATH_MAX];
+    const std::string out_path =
+        (getcwd(cwd, sizeof(cwd)) != nullptr)
+            ? (std::string(cwd) + "/KeyFrameTrajectory.txt")
+            : std::string("KeyFrameTrajectory.txt");
+    node->ShutdownAndSave(out_path);
 
     rclcpp::shutdown();
 
