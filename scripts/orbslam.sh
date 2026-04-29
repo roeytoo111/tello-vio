@@ -13,6 +13,7 @@ echo " - Install dependencies"
 $SUDO apt update || echo " ! Warning: 'apt update' failed (likely due to a broken third-party repo). Continuing with existing package indexes."
 $SUDO apt install -y \
   build-essential cmake git pkg-config \
+  python3 python3-pip python3-setuptools \
   libeigen3-dev libopencv-dev \
   libgl1-mesa-dev libglew-dev libegl1-mesa-dev \
   libwayland-dev libxkbcommon-dev wayland-protocols \
@@ -28,7 +29,12 @@ echo " - Install Pangolin"
 if [[ ! -d Pangolin ]]; then
   git clone https://github.com/stevenlovegrove/Pangolin.git
 fi
-cmake -S Pangolin -B Pangolin/build -DCMAKE_BUILD_TYPE=Release
+cmake -S Pangolin -B Pangolin/build \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DPYTHON_EXECUTABLE=/usr/bin/python3 \
+  -DPython3_EXECUTABLE=/usr/bin/python3 \
+  -DBUILD_PANGO_PYTHON=OFF \
+  -DBUILD_PANGOLIN_PYTHON=OFF
 cmake --build Pangolin/build -j"$(nproc)"
 $SUDO cmake --install Pangolin/build
 
