@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 # Utility rule file for ament_cmake_python_copy_tello_msg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_tello_msg.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_tello_msg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_tello_msg:
-	/usr/bin/cmake -E copy_directory /home/roey/tello-ros2/build/tello_msg/rosidl_generator_py/tello_msg /home/roey/tello-ros2/build/tello_msg/ament_cmake_python/tello_msg/tello_msg
+	/usr/bin/cmake -E copy_directory /home/roey/tello-vio/build/tello_msg/rosidl_generator_py/tello_msg /home/roey/tello-vio/build/tello_msg/ament_cmake_python/tello_msg/tello_msg
 
 ament_cmake_python_copy_tello_msg: CMakeFiles/ament_cmake_python_copy_tello_msg
 ament_cmake_python_copy_tello_msg: CMakeFiles/ament_cmake_python_copy_tello_msg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_tello_msg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_tello_msg.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_tello_msg.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg/CMakeFiles/ament_cmake_python_copy_tello_msg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg/CMakeFiles/ament_cmake_python_copy_tello_msg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_tello_msg.dir/depend
 

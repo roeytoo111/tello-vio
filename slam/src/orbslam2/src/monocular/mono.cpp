@@ -6,14 +6,14 @@
 #include "rclcpp/rclcpp.hpp"
 #include "monocular-slam-node.hpp"
 
-#include"ORB_SLAM2/System.h"
+#include "System.h"
 
 
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
 
-    if(argc != 3)
+    if(argc < 3)
     {
         cerr << endl << "Usage: ros2 run orbslam mono path_to_vocabulary path_to_settings" << endl;        
         rclcpp::shutdown();

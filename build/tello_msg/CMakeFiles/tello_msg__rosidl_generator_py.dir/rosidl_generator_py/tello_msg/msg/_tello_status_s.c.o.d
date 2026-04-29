@@ -1,5 +1,5 @@
 CMakeFiles/tello_msg__rosidl_generator_py.dir/rosidl_generator_py/tello_msg/msg/_tello_status_s.c.o: \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_py/tello_msg/msg/_tello_status_s.c \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_py/tello_msg/msg/_tello_status_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,10 +207,10 @@ CMakeFiles/tello_msg__rosidl_generator_py.dir/rosidl_generator_py/tello_msg/msg/
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__struct.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/rosidl_generator_c__visibility_control.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

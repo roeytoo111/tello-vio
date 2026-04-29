@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/slam/src/orbslam2
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/slam/src/orbslam2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/orbslam2
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/orbslam2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-ros2/build/orbslam2/CMakeFiles /home/roey/tello-ros2/build/orbslam2//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-vio/build/orbslam2/CMakeFiles /home/roey/tello-vio/build/orbslam2//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-ros2/build/orbslam2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-vio/build/orbslam2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,6 +197,67 @@ orbslam2_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orbslam2_uninstall.dir/build.make CMakeFiles/orbslam2_uninstall.dir/build
 .PHONY : orbslam2_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named mono
+
+# Build rule for target.
+mono: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mono
+.PHONY : mono
+
+# fast build rule for target.
+mono/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/build
+.PHONY : mono/fast
+
+src/monocular/mono.o: src/monocular/mono.cpp.o
+.PHONY : src/monocular/mono.o
+
+# target to build an object file
+src/monocular/mono.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/mono.cpp.o
+.PHONY : src/monocular/mono.cpp.o
+
+src/monocular/mono.i: src/monocular/mono.cpp.i
+.PHONY : src/monocular/mono.i
+
+# target to preprocess a source file
+src/monocular/mono.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/mono.cpp.i
+.PHONY : src/monocular/mono.cpp.i
+
+src/monocular/mono.s: src/monocular/mono.cpp.s
+.PHONY : src/monocular/mono.s
+
+# target to generate assembly for a file
+src/monocular/mono.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/mono.cpp.s
+.PHONY : src/monocular/mono.cpp.s
+
+src/monocular/monocular-slam-node.o: src/monocular/monocular-slam-node.cpp.o
+.PHONY : src/monocular/monocular-slam-node.o
+
+# target to build an object file
+src/monocular/monocular-slam-node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o
+.PHONY : src/monocular/monocular-slam-node.cpp.o
+
+src/monocular/monocular-slam-node.i: src/monocular/monocular-slam-node.cpp.i
+.PHONY : src/monocular/monocular-slam-node.i
+
+# target to preprocess a source file
+src/monocular/monocular-slam-node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.i
+.PHONY : src/monocular/monocular-slam-node.cpp.i
+
+src/monocular/monocular-slam-node.s: src/monocular/monocular-slam-node.cpp.s
+.PHONY : src/monocular/monocular-slam-node.s
+
+# target to generate assembly for a file
+src/monocular/monocular-slam-node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.s
+.PHONY : src/monocular/monocular-slam-node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +273,13 @@ help:
 	@echo "... test"
 	@echo "... orbslam2_uninstall"
 	@echo "... uninstall"
+	@echo "... mono"
+	@echo "... src/monocular/mono.o"
+	@echo "... src/monocular/mono.i"
+	@echo "... src/monocular/mono.s"
+	@echo "... src/monocular/monocular-slam-node.o"
+	@echo "... src/monocular/monocular-slam-node.i"
+	@echo "... src/monocular/monocular-slam-node.s"
 .PHONY : help
 
 

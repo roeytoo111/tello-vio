@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 # Utility rule file for tello_msg_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/tello_msg_uninstall.dir/compiler_depend.make
 include CMakeFiles/tello_msg_uninstall.dir/progress.make
 
 CMakeFiles/tello_msg_uninstall:
-	/usr/bin/cmake -P /home/roey/tello-ros2/build/tello_msg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/roey/tello-vio/build/tello_msg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 tello_msg_uninstall: CMakeFiles/tello_msg_uninstall
 tello_msg_uninstall: CMakeFiles/tello_msg_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/tello_msg_uninstall.dir/clean:
 .PHONY : CMakeFiles/tello_msg_uninstall.dir/clean
 
 CMakeFiles/tello_msg_uninstall.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg/CMakeFiles/tello_msg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg/CMakeFiles/tello_msg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tello_msg_uninstall.dir/depend
 

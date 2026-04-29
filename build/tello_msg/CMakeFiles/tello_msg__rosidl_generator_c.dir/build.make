@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tello_msg__rosidl_generator_c.dir/depend.make
@@ -147,8 +147,8 @@ rosidl_generator_c/tello_msg/msg/tello_status.h: /opt/ros/humble/share/geometry_
 rosidl_generator_c/tello_msg/msg/tello_status.h: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_c/tello_msg/msg/tello_status.h: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_c/tello_msg/msg/tello_status.h: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/roey/tello-vio/build/tello_msg/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.h: rosidl_generator_c/tello_msg/msg/tello_status.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.h
@@ -195,44 +195,44 @@ rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c: rosidl_g
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o: CMakeFiles/tello_msg__rosidl_generator_c.dir/flags.make
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o: rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o: CMakeFiles/tello_msg__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o -MF CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o.d -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o -c /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o -MF CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o.d -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.o -c /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c > CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c > CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.i
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.c.s
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o: CMakeFiles/tello_msg__rosidl_generator_c.dir/flags.make
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o: rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o: CMakeFiles/tello_msg__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o -MF CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o.d -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o -c /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o -MF CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o.d -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.o -c /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c > CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c > CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.i
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.c.s
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o: CMakeFiles/tello_msg__rosidl_generator_c.dir/flags.make
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o: rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o: CMakeFiles/tello_msg__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o -MF CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o.d -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o -c /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o -MF CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o.d -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.o -c /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c > CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c > CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.i
 
 CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c -o CMakeFiles/tello_msg__rosidl_generator_c.dir/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.c.s
 
 # Object files for target tello_msg__rosidl_generator_c
 tello_msg__rosidl_generator_c_OBJECTS = \
@@ -253,7 +253,7 @@ libtello_msg__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__
 libtello_msg__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libtello_msg__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libtello_msg__rosidl_generator_c.so: CMakeFiles/tello_msg__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libtello_msg__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libtello_msg__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tello_msg__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -279,6 +279,6 @@ CMakeFiles/tello_msg__rosidl_generator_c.dir/depend: rosidl_generator_c/tello_ms
 CMakeFiles/tello_msg__rosidl_generator_c.dir/depend: rosidl_generator_c/tello_msg/msg/tello_id.h
 CMakeFiles/tello_msg__rosidl_generator_c.dir/depend: rosidl_generator_c/tello_msg/msg/tello_status.h
 CMakeFiles/tello_msg__rosidl_generator_c.dir/depend: rosidl_generator_c/tello_msg/msg/tello_wifi_config.h
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg/CMakeFiles/tello_msg__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg/CMakeFiles/tello_msg__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tello_msg__rosidl_generator_c.dir/depend
 

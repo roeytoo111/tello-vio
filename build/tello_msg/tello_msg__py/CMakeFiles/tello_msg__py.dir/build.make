@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 # Utility rule file for tello_msg__py.
 
@@ -155,8 +155,8 @@ rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/roey/tello-ros2/build/tello_msg/tello_msg__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/roey/tello-ros2/build/tello_msg/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/roey/tello-vio/build/tello_msg/tello_msg__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/roey/tello-vio/build/tello_msg/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_introspection_c.c
@@ -204,10 +204,10 @@ tello_msg__py/CMakeFiles/tello_msg__py.dir/build: tello_msg__py
 .PHONY : tello_msg__py/CMakeFiles/tello_msg__py.dir/build
 
 tello_msg__py/CMakeFiles/tello_msg__py.dir/clean:
-	cd /home/roey/tello-ros2/build/tello_msg/tello_msg__py && $(CMAKE_COMMAND) -P CMakeFiles/tello_msg__py.dir/cmake_clean.cmake
+	cd /home/roey/tello-vio/build/tello_msg/tello_msg__py && $(CMAKE_COMMAND) -P CMakeFiles/tello_msg__py.dir/cmake_clean.cmake
 .PHONY : tello_msg__py/CMakeFiles/tello_msg__py.dir/clean
 
 tello_msg__py/CMakeFiles/tello_msg__py.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/build/tello_msg/tello_msg__py /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg/tello_msg__py /home/roey/tello-ros2/build/tello_msg/tello_msg__py/CMakeFiles/tello_msg__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/build/tello_msg/tello_msg__py /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg/tello_msg__py /home/roey/tello-vio/build/tello_msg/tello_msg__py/CMakeFiles/tello_msg__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tello_msg__py/CMakeFiles/tello_msg__py.dir/depend
 

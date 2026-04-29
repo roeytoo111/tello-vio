@@ -2,7 +2,7 @@
 
 #include <opencv2/core/core.hpp>
 
-#include "ORB_SLAM2/MapPoint.h"
+#include "MapPoint.h"
 
 using ImageMsg = sensor_msgs::msg::Image;
 using MarkerMsg = visualization_msgs::msg::Marker;
@@ -17,11 +17,14 @@ MonocularSlamNode::MonocularSlamNode(ORB_SLAM2::System* pSLAM, const string &str
     m_SLAM(pSLAM)
 {
 
-    m_image_subscriber = this->create_subscription<ImageMsg>("camera", std::bind(&MonocularSlamNode::GrabImage, this, std::placeholders::_1));
+    m_image_subscriber = this->create_subscription<ImageMsg>(
+        "camera",
+        rclcpp::SensorDataQoS(),
+        std::bind(&MonocularSlamNode::GrabImage, this, std::placeholders::_1));
 
-    m_annotated_image_publisher = this->create_publisher<ImageMsg>("annotated_frame");
+    m_annotated_image_publisher = this->create_publisher<ImageMsg>("annotated_frame", rclcpp::SensorDataQoS());
 
-    m_map_publisher = this->create_publisher<MarkerMsg>("ORB_SLAM_map");
+    m_map_publisher = this->create_publisher<MarkerMsg>("ORB_SLAM_map", rclcpp::QoS(10));
 
     mState = ORB_SLAM2::Tracking::SYSTEM_NOT_READY;
     
@@ -58,7 +61,8 @@ void MonocularSlamNode::GrabImage(const ImageMsg::SharedPtr msg)
         return;
     }
     
-    Tcw = m_SLAM->TrackMonocular(m_cvImPtr->image, msg->header.stamp.sec);
+    const rclcpp::Time stamp(msg->header.stamp);
+    Tcw = m_SLAM->TrackMonocular(m_cvImPtr->image, stamp.seconds());
 
     UpdateSLAMState();
     UpdateMapState();
@@ -249,7 +253,8 @@ void MonocularSlamNode::PublishFrame()
     rosImage.header.stamp = this->now();
     rosImage.encoding = "bgr8";
 
-    m_annotated_image_publisher->publish(rosImage.toImageMsg());
+    auto msg = rosImage.toImageMsg();
+    m_annotated_image_publisher->publish(*msg);
     
 }
 

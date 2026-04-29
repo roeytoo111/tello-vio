@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 # Utility rule file for tello_msg.
 
@@ -66,9 +66,9 @@ include CMakeFiles/tello_msg.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/tello_msg.dir/progress.make
 
-CMakeFiles/tello_msg: /home/roey/tello-ros2/workspace/src/tello_msg/msg/TelloStatus.msg
-CMakeFiles/tello_msg: /home/roey/tello-ros2/workspace/src/tello_msg/msg/TelloID.msg
-CMakeFiles/tello_msg: /home/roey/tello-ros2/workspace/src/tello_msg/msg/TelloWifiConfig.msg
+CMakeFiles/tello_msg: /home/roey/tello-vio/workspace/src/tello_msg/msg/TelloStatus.msg
+CMakeFiles/tello_msg: /home/roey/tello-vio/workspace/src/tello_msg/msg/TelloID.msg
+CMakeFiles/tello_msg: /home/roey/tello-vio/workspace/src/tello_msg/msg/TelloWifiConfig.msg
 CMakeFiles/tello_msg: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/tello_msg: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/tello_msg: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -143,6 +143,6 @@ CMakeFiles/tello_msg.dir/clean:
 .PHONY : CMakeFiles/tello_msg.dir/clean
 
 CMakeFiles/tello_msg.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg/CMakeFiles/tello_msg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg/CMakeFiles/tello_msg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tello_msg.dir/depend
 

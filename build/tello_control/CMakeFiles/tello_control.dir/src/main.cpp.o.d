@@ -1,5 +1,5 @@
 CMakeFiles/tello_control.dir/src/main.cpp.o: \
- /home/roey/tello-ros2/workspace/src/tello_control/src/main.cpp \
+ /home/roey/tello-vio/workspace/src/tello_control/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

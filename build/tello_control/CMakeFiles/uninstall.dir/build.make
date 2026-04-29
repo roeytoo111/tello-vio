@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_control
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_control
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_control
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_control /home/roey/tello-ros2/workspace/src/tello_control /home/roey/tello-ros2/build/tello_control /home/roey/tello-ros2/build/tello_control /home/roey/tello-ros2/build/tello_control/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_control /home/roey/tello-vio/workspace/src/tello_control /home/roey/tello-vio/build/tello_control /home/roey/tello-vio/build/tello_control /home/roey/tello-vio/build/tello_control/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

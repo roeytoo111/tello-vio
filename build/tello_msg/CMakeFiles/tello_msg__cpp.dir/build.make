@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 # Utility rule file for tello_msg__cpp.
 
@@ -159,8 +159,8 @@ rosidl_generator_cpp/tello_msg/msg/tello_status.hpp: /opt/ros/humble/share/geome
 rosidl_generator_cpp/tello_msg/msg/tello_status.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_cpp/tello_msg/msg/tello_status.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/tello_msg/msg/tello_status.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roey/tello-ros2/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/roey/tello-ros2/build/tello_msg/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roey/tello-vio/build/tello_msg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/roey/tello-vio/build/tello_msg/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/tello_msg/msg/detail/tello_status__builder.hpp: rosidl_generator_cpp/tello_msg/msg/tello_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tello_msg/msg/detail/tello_status__builder.hpp
@@ -220,6 +220,6 @@ CMakeFiles/tello_msg__cpp.dir/clean:
 .PHONY : CMakeFiles/tello_msg__cpp.dir/clean
 
 CMakeFiles/tello_msg__cpp.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/workspace/src/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg /home/roey/tello-ros2/build/tello_msg/CMakeFiles/tello_msg__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/workspace/src/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg /home/roey/tello-vio/build/tello_msg/CMakeFiles/tello_msg__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tello_msg__cpp.dir/depend
 

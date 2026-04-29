@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/slam/src/orbslam2
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/slam/src/orbslam2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/orbslam2
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/orbslam2
 
 # Utility rule file for orbslam2_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/orbslam2_uninstall.dir/compiler_depend.make
 include CMakeFiles/orbslam2_uninstall.dir/progress.make
 
 CMakeFiles/orbslam2_uninstall:
-	/usr/bin/cmake -P /home/roey/tello-ros2/build/orbslam2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/roey/tello-vio/build/orbslam2/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 orbslam2_uninstall: CMakeFiles/orbslam2_uninstall
 orbslam2_uninstall: CMakeFiles/orbslam2_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/orbslam2_uninstall.dir/clean:
 .PHONY : CMakeFiles/orbslam2_uninstall.dir/clean
 
 CMakeFiles/orbslam2_uninstall.dir/depend:
-	cd /home/roey/tello-ros2/build/orbslam2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/slam/src/orbslam2 /home/roey/tello-ros2/slam/src/orbslam2 /home/roey/tello-ros2/build/orbslam2 /home/roey/tello-ros2/build/orbslam2 /home/roey/tello-ros2/build/orbslam2/CMakeFiles/orbslam2_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/orbslam2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/slam/src/orbslam2 /home/roey/tello-vio/slam/src/orbslam2 /home/roey/tello-vio/build/orbslam2 /home/roey/tello-vio/build/orbslam2 /home/roey/tello-vio/build/orbslam2/CMakeFiles/orbslam2_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/orbslam2_uninstall.dir/depend
 

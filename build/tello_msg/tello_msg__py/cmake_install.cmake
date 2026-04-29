@@ -1,8 +1,8 @@
-# Install script for directory: /home/roey/tello-ros2/build/tello_msg/tello_msg__py
+# Install script for directory: /home/roey/tello-vio/build/tello_msg/tello_msg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/roey/tello-ros2/install/tello_msg")
+  set(CMAKE_INSTALL_PREFIX "/home/roey/tello-vio/install/tello_msg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

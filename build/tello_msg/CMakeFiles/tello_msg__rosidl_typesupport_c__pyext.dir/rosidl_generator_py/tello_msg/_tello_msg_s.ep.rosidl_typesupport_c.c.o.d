@@ -1,5 +1,5 @@
 CMakeFiles/tello_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_c.c.o: \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_c.c \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_py/tello_msg/_tello_msg_s.ep.rosidl_typesupport_c.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -201,16 +201,16 @@ CMakeFiles/tello_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tello_
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__type_support.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/rosidl_generator_c__visibility_control.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__struct.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__type_support.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/rosidl_generator_c__visibility_control.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__type_support.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__struct.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__type_support.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__struct.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.h
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_status__functions.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__type_support.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__struct.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_id__functions.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__type_support.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__struct.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.h

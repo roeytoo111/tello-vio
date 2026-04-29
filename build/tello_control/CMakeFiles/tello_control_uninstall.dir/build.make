@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_control
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_control
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_control
 
 # Utility rule file for tello_control_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/tello_control_uninstall.dir/compiler_depend.make
 include CMakeFiles/tello_control_uninstall.dir/progress.make
 
 CMakeFiles/tello_control_uninstall:
-	/usr/bin/cmake -P /home/roey/tello-ros2/build/tello_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/roey/tello-vio/build/tello_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 tello_control_uninstall: CMakeFiles/tello_control_uninstall
 tello_control_uninstall: CMakeFiles/tello_control_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/tello_control_uninstall.dir/clean:
 .PHONY : CMakeFiles/tello_control_uninstall.dir/clean
 
 CMakeFiles/tello_control_uninstall.dir/depend:
-	cd /home/roey/tello-ros2/build/tello_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-ros2/workspace/src/tello_control /home/roey/tello-ros2/workspace/src/tello_control /home/roey/tello-ros2/build/tello_control /home/roey/tello-ros2/build/tello_control /home/roey/tello-ros2/build/tello_control/CMakeFiles/tello_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roey/tello-vio/build/tello_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roey/tello-vio/workspace/src/tello_control /home/roey/tello-vio/workspace/src/tello_control /home/roey/tello-vio/build/tello_control /home/roey/tello-vio/build/tello_control /home/roey/tello-vio/build/tello_control/CMakeFiles/tello_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tello_control_uninstall.dir/depend
 

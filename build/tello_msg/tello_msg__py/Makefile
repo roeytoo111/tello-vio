@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_msg
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_msg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_msg
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_msg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-ros2/build/tello_msg/CMakeFiles /home/roey/tello-ros2/build/tello_msg/tello_msg__py//CMakeFiles/progress.marks
-	cd /home/roey/tello-ros2/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-ros2/build/tello_msg/CMakeFiles 0
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-vio/build/tello_msg/CMakeFiles /home/roey/tello-vio/build/tello_msg/tello_msg__py//CMakeFiles/progress.marks
+	cd /home/roey/tello-vio/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-vio/build/tello_msg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/roey/tello-ros2/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/clean
+	cd /home/roey/tello-vio/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/roey/tello-ros2/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/preinstall
+	cd /home/roey/tello-vio/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/roey/tello-ros2/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/preinstall
+	cd /home/roey/tello-vio/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tello_msg__py/CMakeFiles/tello_msg__py.dir/rule:
-	cd /home/roey/tello-ros2/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/CMakeFiles/tello_msg__py.dir/rule
+	cd /home/roey/tello-vio/build/tello_msg && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tello_msg__py/CMakeFiles/tello_msg__py.dir/rule
 .PHONY : tello_msg__py/CMakeFiles/tello_msg__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ tello_msg__py: tello_msg__py/CMakeFiles/tello_msg__py.dir/rule
 
 # fast build rule for target.
 tello_msg__py/fast:
-	cd /home/roey/tello-ros2/build/tello_msg && $(MAKE) $(MAKESILENT) -f tello_msg__py/CMakeFiles/tello_msg__py.dir/build.make tello_msg__py/CMakeFiles/tello_msg__py.dir/build
+	cd /home/roey/tello-vio/build/tello_msg && $(MAKE) $(MAKESILENT) -f tello_msg__py/CMakeFiles/tello_msg__py.dir/build.make tello_msg__py/CMakeFiles/tello_msg__py.dir/build
 .PHONY : tello_msg__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/roey/tello-ros2/build/tello_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/roey/tello-vio/build/tello_msg && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

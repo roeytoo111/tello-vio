@@ -1,12 +1,12 @@
 CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_wifi_config__type_support_c.cpp.o: \
- /home/roey/tello-ros2/build/tello_msg/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_wifi_config__type_support_c.cpp \
+ /home/roey/tello-vio/build/tello_msg/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_wifi_config__type_support_c.cpp \
  /usr/include/stdc-predef.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_fastrtps_c.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_typesupport_fastrtps_c/tello_msg/msg/detail/tello_wifi_config__rosidl_typesupport_fastrtps_c.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_typesupport_fastrtps_c/tello_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_typesupport_fastrtps_c/tello_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -182,9 +182,9 @@ CMakeFiles/tello_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastr
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/malloc.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__struct.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/detail/tello_wifi_config__functions.h \
  /usr/include/c++/11/stdlib.h \
- /home/roey/tello-ros2/build/tello_msg/rosidl_generator_c/tello_msg/msg/rosidl_generator_c__visibility_control.h \
+ /home/roey/tello-vio/build/tello_msg/rosidl_generator_c/tello_msg/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

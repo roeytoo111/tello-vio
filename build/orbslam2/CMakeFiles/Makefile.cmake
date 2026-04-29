@@ -12,10 +12,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "ament_cmake_core/package.cmake"
   "ament_cmake_package_templates/templates.cmake"
-  "/home/roey/tello-ros2/slam/src/orbslam2/CMakeLists.txt"
-  "/home/roey/tello-ros2/slam/src/orbslam2/CMakeModules/FindEigen.cmake"
-  "/home/roey/tello-ros2/slam/src/orbslam2/CMakeModules/FindORB_SLAM2.cmake"
-  "/home/roey/tello-ros2/slam/src/orbslam2/package.xml"
+  "/home/roey/tello-vio/slam/src/orbslam2/CMakeLists.txt"
+  "/home/roey/tello-vio/slam/src/orbslam2/CMakeModules/FindEigen.cmake"
+  "/home/roey/tello-vio/slam/src/orbslam2/CMakeModules/FindORB_SLAM2.cmake"
+  "/home/roey/tello-vio/slam/src/orbslam2/package.xml"
   "/opt/ros/humble/cmake/yamlConfig.cmake"
   "/opt/ros/humble/cmake/yamlConfigVersion.cmake"
   "/opt/ros/humble/cmake/yamlTargets-none.cmake"
@@ -790,4 +790,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/orbslam2_uninstall.dir/DependInfo.cmake"
+  "CMakeFiles/mono.dir/DependInfo.cmake"
   )

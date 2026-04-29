@@ -54,8 +54,6 @@ add_executable(
 )
 
 target_link_libraries(mono
-  g2o
-  DBoW2
   ${ORB_SLAM2_LIBRARIES}
   ${Boost_LIBRARIES}
   ${OpenCV_LIBS}

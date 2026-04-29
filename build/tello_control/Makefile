@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roey/tello-ros2/workspace/src/tello_control
+CMAKE_SOURCE_DIR = /home/roey/tello-vio/workspace/src/tello_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roey/tello-ros2/build/tello_control
+CMAKE_BINARY_DIR = /home/roey/tello-vio/build/tello_control
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-ros2/build/tello_control/CMakeFiles /home/roey/tello-ros2/build/tello_control//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-vio/build/tello_control/CMakeFiles /home/roey/tello-vio/build/tello_control//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-ros2/build/tello_control/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roey/tello-vio/build/tello_control/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

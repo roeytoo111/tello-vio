@@ -28,17 +28,60 @@ list(APPEND _ORB_SLAM2_HINTS
   "/opt"
 )
 
-find_path(ORB_SLAM2_INCLUDE_DIRS
-  NAMES ORB_SLAM2/System.h
+find_path(_ORB_SLAM2_ROOT
+  # We need the project root (some headers include Thirdparty/* with relative paths).
+  NAMES Thirdparty/DBoW2/DBoW2/BowVector.h
+  HINTS ${_ORB_SLAM2_HINTS}
+)
+
+find_path(_ORB_SLAM2_INCLUDE
+  # Different forks install headers either as:
+  #   include/ORB_SLAM2/System.h   (wrapper-style)
+  # or
+  #   include/System.h            (upstream-style)
+  NAMES ORB_SLAM2/System.h System.h
   HINTS ${_ORB_SLAM2_HINTS}
   PATH_SUFFIXES include Include
 )
+
+set(ORB_SLAM2_INCLUDE_DIRS "")
+if(_ORB_SLAM2_ROOT)
+  list(APPEND ORB_SLAM2_INCLUDE_DIRS "${_ORB_SLAM2_ROOT}")
+endif()
+if(_ORB_SLAM2_INCLUDE)
+  list(APPEND ORB_SLAM2_INCLUDE_DIRS "${_ORB_SLAM2_INCLUDE}")
+endif()
 
 find_library(ORB_SLAM2_LIBRARIES
   NAMES ORB_SLAM2 libORB_SLAM2 orbslam2 liborbslam2
   HINTS ${_ORB_SLAM2_HINTS}
   PATH_SUFFIXES lib lib64 build/lib build/lib64
 )
+
+# ORB_SLAM2 is typically built together with Thirdparty/DBoW2 and Thirdparty/g2o.
+# The wrapper executable may need to link these DSOs explicitly.
+find_library(DBOW2_LIBRARY
+  NAMES DBoW2 libDBoW2
+  HINTS ${_ORB_SLAM2_HINTS}
+  PATH_SUFFIXES lib lib64 build/lib build/lib64
+)
+
+find_library(G2O_LIBRARY
+  NAMES g2o libg2o
+  HINTS ${_ORB_SLAM2_HINTS}
+  PATH_SUFFIXES Thirdparty/g2o/lib Thirdparty/g2o/build/lib Thirdparty/g2o/build/lib64
+)
+
+if(ORB_SLAM2_LIBRARIES)
+  set(_ORB_SLAM2_ALL_LIBS "${ORB_SLAM2_LIBRARIES}")
+  if(DBOW2_LIBRARY)
+    list(APPEND _ORB_SLAM2_ALL_LIBS "${DBOW2_LIBRARY}")
+  endif()
+  if(G2O_LIBRARY)
+    list(APPEND _ORB_SLAM2_ALL_LIBS "${G2O_LIBRARY}")
+  endif()
+  set(ORB_SLAM2_LIBRARIES "${_ORB_SLAM2_ALL_LIBS}")
+endif()
 
 find_package_handle_standard_args(ORB_SLAM2
   REQUIRED_VARS ORB_SLAM2_INCLUDE_DIRS ORB_SLAM2_LIBRARIES
