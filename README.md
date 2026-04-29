@@ -1,13 +1,13 @@
 # Tello VIO (ROS 2 Humble, Ubuntu 22.04)
 
-זהו **פרויקט מחקרי** שמטרתו ליישם ולחקור **Visual-Inertial Odometry (VIO)** על רחפן **DJI Tello** באמצעות **ROS 2 Humble על Ubuntu 22.04**.
+This is a **research project** aimed at implementing and studying **Visual-Inertial Odometry (VIO)** on a **DJI Tello** drone using **ROS 2 Humble on Ubuntu 22.04**.
 
-הפרויקט **בתהליך**: כרגע אני מנסה להבין כיצד לשלב VIO על גבי ה‑Tello, ולממש בצורה הטובה ביותר שיטה זו של **שיערוך מיקום** (pose estimation) בעזרת מצלמה ו‑IMU.
+The project is **work in progress**: I am currently exploring how to integrate VIO on the Tello and how to implement this **pose estimation** approach as robustly as possible using the camera and IMU.
 
-בנוסף, הריפו כולל דרייבר ROS 2 עבור ה‑Tello (מבוסס [DJITelloPy](https://github.com/damiafuentes/DJITelloPy) וה‑SDK הרשמי: [Tello-Python](https://github.com/dji-sdk/Tello-Python)). ניתן גם לשלוט במספר רחפנים (Swarm נתמך ב‑[Tello EDU](https://www.ryzerobotics.com/tello-edu)).
+In addition, this repo includes a ROS 2 driver for the Tello (based on [DJITelloPy](https://github.com/damiafuentes/DJITelloPy) and the official SDK: [Tello-Python](https://github.com/dji-sdk/Tello-Python)). Multi-drone control is also possible (swarm is supported on [Tello EDU](https://www.ryzerobotics.com/tello-edu)).
 
-- מומלץ לעדכן את קושחת ה‑Tello לגרסה העדכנית.
-- ה‑workspace מחולק לתת‑workspaces שמכילים לוגיקה שונה.
+- It is recommended to update the Tello firmware to the latest version available.
+- The workspace is divided into sub-workspaces that contain different logic.
   - `tello` package is the main package, includes access to the drone information, camera image and  control.
   - `tello_msg` package defines custom messages to access specific Tello data.
     - Defines the `TelloStatus`, `TelloID` and `TelloWifiConfig` messages 
@@ -148,9 +148,9 @@ ros2 run orbslam2 mono <VOCABULARY FILE> <CONFIG_FILE>
 - The vocabulary file can be obtained from the ORB_SLAM2 repository ( `ORB_SLAM2/Vocabulary/ORBvoc.txt`).
 - Sample configuration files can be found inside the package at `orbslam2/src/monocular/config.yaml` for monocular SLAM.
 
-### מקורות תיאורטיים (ייכנסו בהמשך)
+### Theoretical references (to be added)
 
-הסעיף הזה מיועד לריכוז מקורות ידע תיאורטיים על VIO/SLAM/State Estimation שאוסיף בהמשך. כרגע הוא משמש כ-placeholder:
+This section is reserved for theoretical references on VIO/SLAM/state estimation that will be added later. For now it acts as a placeholder:
 
 - **VIO / Visual-Inertial Navigation**: TBD
 - **State Estimation / Filtering (EKF/MSCKF)**: TBD
